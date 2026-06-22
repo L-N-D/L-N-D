@@ -1,63 +1,115 @@
-# Hi, I'm Le Nhat Duy 👋
-### Backend & Systems Engineer | Specializing in Scalable Architectures & Data Pipelines
+<h1 align="center">
+  Hi <img src="https://raw.githubusercontent.com/KevinPatel04/KevinPatel04/master/Hi.gif" width="30px">,
+  I'm Le Nhat Duy
+</h1>
 
-I am a Software Engineering student at the **University of Science (VNU-HCM)**, majoring in **Computer Networks and Telecommunications** (GPA: **8.18 / 10**). I design and deploy reliable, high-concurrency backend systems, real-time IoT event pipelines, and memory-efficient storage architectures. 
+<p align="center">
+  <b>Software Engineering Student | Backend &amp; Systems Engineer | System Design Enthusiast</b>
+</p>
 
-My engineering philosophy is simple: **build production-grade software that is reliable, secure, and optimized for real-world hardware limits.**
+<p align="center">
+I am a Software Engineering student at the <b>University of Science (VNU-HCM)</b>,
+majoring in <b>Computer Networks and Telecommunications</b> (GPA: <b>8.18/10</b>).
+<br>
+I design and build reliable, high-concurrency backend systems, real-time IoT event pipelines,
+and scalable storage architectures with a strong focus on performance and clean system design.
+</p>
 
----
-
-## 🚀 Featured Project: TDMedia Studio
-> **Live Production Platform:** [tdmedia.site](https://tdmedia.site) | **Role:** Core Backend Architect & DevOps
-
-A production photo album management platform serving real-world photography clients. Engineered to handle large concurrent file uploads and asynchronous processing pipelines on resource-constrained host servers (deployed via Docker on Synology NAS).
-
-### 🛠️ Key Architectural & Performance Wins:
-- **Zero-Buffer Streaming Uploads**: Utilized Node.js `Busboy` to stream multi-file multipart uploads directly to disk without memory buffering, preventing server out-of-memory crashes under heavy concurrent usage.
-- **Nginx X-Accel-Redirect Integration**: Bypassed Node.js event-loop overhead for media serving by using Nginx `internal` locations. The NestJS API verifies download JWTs and offloads direct file streaming to Nginx, reducing Node.js CPU usage by **over 60%**.
-- **Asynchronous Task Queues**: Built a robust background processing pipeline using Redis and BullMQ. Offloaded WebP image compression (Sharp), thumbnail generation, and ZIP archive bundling to concurrent background workers.
-- **Transaction-Safe Operations**: Designed custom job tracking handlers in BullMQ to handle client-side abort signals. On job cancellation (`JobCancelledError`), workers automatically clean up temporary disk resources and synchronize PostgreSQL database transaction states.
-
----
-
-## 📁 Key Engineering Repositories
-
-### 📡 Flood Sense Tunnel
-*Real-time IoT Telemetry & Environmental Monitoring System*
-- **Ingestion Pipeline**: Designed a high-throughput telemetry ingestion pipeline using an MQTT broker to capture live sensor streams from remote nodes.
-- **Real-time Broadcast**: Built customized, low-latency WebSocket connection pools to broadcast live telemetry metrics to active client dashboards.
-- **Optimized Storage**: Modeled an optimized MongoDB database structure for time-series sensor logs, reducing query response latencies and storage footprint.
-- **DevOps**: Containerized the application with Docker and configured automated health checks on a VPS deployment.
-
-### 📦 Enterprise Inventory & Invoice System (Java / Spring Boot)
-*Sales, Warehouse & Invoice Management SaaS for Vietnamese Merchants*
-- **Java Spring Boot Backend**: Built a structured multi-layered API (Spring Boot 3, Spring Security, Spring Data JPA) optimized for local businesses.
-- **AWS S3 / Cloudflare R2 Uploads**: Implemented a memory-efficient upload pipeline using S3 SDK Presigned URLs, enabling clients to upload raw invoice files directly to Cloudflare R2 and avoiding server-side bandwidth exhaustion.
-- **Secure CDN Delivery**: Secured private files using short-lived (15-min) Presigned GET URLs issued dynamically by Spring Boot after checking user permissions.
-- **Zero Inbound Port Routing**: Containerized in Docker and routed traffic securely using a Cloudflare Tunnel (`iostream.store`), eliminating firewall vulnerabilities and host IP exposure.
+<p align="center">
+📍 Ho Chi Minh City, Vietnam &nbsp;&nbsp;|&nbsp;&nbsp;
+📧 <a href="mailto:lnhatduy27@gmail.com">lnhatduy27@gmail.com</a> &nbsp;&nbsp;|&nbsp;&nbsp;
+🚀 Live Platform: <a href="https://tdmedia.site">tdmedia.site</a>
+</p>
 
 ---
 
-## 🛠️ Technology Stack & Expertise
+<h3 align="center"> GitHub Analytics</h3>
 
-| Category | Technologies |
-| :--- | :--- |
-| **Backend Core** | TypeScript, JavaScript, Node.js, NestJS, Spring Boot (Java), Express.js |
-| **Databases & Caching** | PostgreSQL, MongoDB, Redis, Prisma ORM, Spring Data JPA |
-| **Real-time & Queues** | MQTT, WebSocket, BullMQ (Task Queue Processing) |
-| **Infrastructure & DevOps** | Docker, Nginx, Cloudflare Tunnels, Cloudflare R2, Linux VPS, Jenkins, Git/GitHub Actions |
-| **Testing & Tools** | Jest, Supertest, Postman, Swagger/OpenAPI |
+<p align="center">
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=L-N-D&amp;layout=compact&amp;theme=tokyonight" alt="Top Languages">
+  &nbsp;&nbsp;
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=L-N-D&amp;theme=tokyonight" alt="GitHub Streak">
+</p>
 
----
-
-## 🧠 Architectural Interests & Focus
-- **Distributed Queues & Worker Patterns**: High-throughput jobs, rate-limiting, and error-recovery.
-- **Memory-Efficient Data Processing**: I/O stream piping, buffer minimization, and server-side CPU offloading.
-- **Defensive Security Practices**: Preventative designs against Directory Traversal, secure session/token management, and zero-trust network configurations.
+<p align="center">
+  <img src="https://github-readme-stats.vercel.app/api?username=L-N-D&amp;show_icons=true&amp;count_private=true&amp;include_all_commits=true&amp;theme=tokyonight" width="450" alt="GitHub Stats">
+</p>
 
 ---
 
-## 📬 Connect With Me
-- **Email:** [lnhatduy27@gmail.com](mailto:lnhatduy27@gmail.com)
-- **LinkedIn:** [linkedin.com/in/lnhatduy27](https://www.linkedin.com/in/lnhatduy27)
-- **Flagship Project:** [tdmedia.site](https://tdmedia.site)
+## 🚀 About Me
+
+- 🎓 **Education**: Software Engineering Student at VNU-HCM (University of Science)
+- ⚙️ **Core Focus**: Designing high-concurrency architectures, asynchronous worker patterns, and memory-efficient streaming.
+- 🌱 **Learning Track**: Deepening knowledge in Distributed Systems, Cloud Infrastructure (AWS, Kubernetes), and CI/CD pipelines.
+- 🔥 **Engineering Philosophy**: *"Build production-grade software that is reliable, secure, and optimized for real-world hardware limits."*
+
+---
+
+## 🛠 Tech Stack
+
+### Languages
+<p>
+  <img src="https://img.shields.io/badge/TypeScript-05122A?style=flat&amp;logo=typescript" alt="TypeScript">
+  <img src="https://img.shields.io/badge/JavaScript-05122A?style=flat&amp;logo=javascript" alt="JavaScript">
+  <img src="https://img.shields.io/badge/Java-05122A?style=flat&amp;logo=openjdk" alt="Java">
+  <img src="https://img.shields.io/badge/C++-05122A?style=flat&amp;logo=cplusplus" alt="C++">
+  <img src="https://img.shields.io/badge/SQL-05122A?style=flat&amp;logo=postgresql" alt="SQL">
+</p>
+
+### Backend
+<p>
+  <img src="https://img.shields.io/badge/NestJS-05122A?style=flat&amp;logo=nestjs" alt="NestJS">
+  <img src="https://img.shields.io/badge/Spring_Boot-05122A?style=flat&amp;logo=springboot" alt="Spring Boot">
+  <img src="https://img.shields.io/badge/NodeJS-05122A?style=flat&amp;logo=node.js" alt="NodeJS">
+  <img src="https://img.shields.io/badge/Express-05122A?style=flat&amp;logo=express" alt="Express">
+</p>
+
+### Frontend
+<p>
+  <img src="https://img.shields.io/badge/React-05122A?style=flat&amp;logo=react" alt="React">
+  <img src="https://img.shields.io/badge/Vite-05122A?style=flat&amp;logo=vite" alt="Vite">
+  <img src="https://img.shields.io/badge/Zustand-05122A?style=flat&amp;logo=react" alt="Zustand">
+  <img src="https://img.shields.io/badge/TailwindCSS-05122A?style=flat&amp;logo=tailwindcss" alt="TailwindCSS">
+</p>
+
+### Databases &amp; Caching
+<p>
+  <img src="https://img.shields.io/badge/PostgreSQL-05122A?style=flat&amp;logo=postgresql" alt="PostgreSQL">
+  <img src="https://img.shields.io/badge/MongoDB-05122A?style=flat&amp;logo=mongodb" alt="MongoDB">
+  <img src="https://img.shields.io/badge/Redis-05122A?style=flat&amp;logo=redis" alt="Redis">
+  <img src="https://img.shields.io/badge/Supabase-05122A?style=flat&amp;logo=supabase" alt="Supabase">
+</p>
+
+### DevOps &amp; Infrastructure
+<p>
+  <img src="https://img.shields.io/badge/Docker-05122A?style=flat&amp;logo=docker" alt="Docker">
+  <img src="https://img.shields.io/badge/Nginx-05122A?style=flat&amp;logo=nginx" alt="Nginx">
+  <img src="https://img.shields.io/badge/Cloudflare_Tunnels-05122A?style=flat&amp;logo=cloudflare" alt="Cloudflare Tunnels">
+  <img src="https://img.shields.io/badge/Linux-05122A?style=flat&amp;logo=linux" alt="Linux">
+  <img src="https://img.shields.io/badge/Git-05122A?style=flat&amp;logo=git" alt="Git">
+</p>
+
+## 🌐 Connect With Me
+
+<p align="center">
+  <a href="https://github.com/L-N-D">
+    <img src="https://img.shields.io/badge/-GitHub-181717?style=for-the-badge&amp;logo=github&amp;logoColor=white" alt="GitHub">
+  </a>
+  &nbsp;&nbsp;
+  <a href="https://www.linkedin.com/in/lnhatduy27/">
+    <img src="https://img.shields.io/badge/-LinkedIn-0077B5?style=for-the-badge&amp;logo=linkedin&amp;logoColor=white" alt="LinkedIn">
+  </a>
+  &nbsp;&nbsp;
+  <a href="mailto:lnhatduy27@gmail.com">
+    <img src="https://img.shields.io/badge/-Gmail-D14836?style=for-the-badge&amp;logo=gmail&amp;logoColor=white" alt="Gmail">
+  </a>
+</p>
+
+---
+
+<p align="center">
+  <i>
+    "Build production-grade software that is reliable, secure, and optimized for real-world hardware limits."
+  </i>
+</p>
